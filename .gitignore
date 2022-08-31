@@ -8,3 +8,5 @@ dist/
 
 # Environments
 venv/
+
+app.spec
