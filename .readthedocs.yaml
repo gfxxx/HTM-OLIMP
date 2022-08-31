@@ -12,4 +12,5 @@ python:
    - requirements: requirements.txt
 
 sphinx:
+   source: docs/source
    configuration: docs/conf.py
