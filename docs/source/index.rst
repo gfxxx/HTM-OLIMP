@@ -9,7 +9,7 @@ Welcome to HTM-OLIMP's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-
+   index.md
 
 
 Indices and tables
