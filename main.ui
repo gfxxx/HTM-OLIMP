@@ -1,0 +1,1129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1031</width>
+    <height>794</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: &quot;#343434&quot;;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color:&quot;#343434&quot;;</string>
+   </property>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1031</width>
+      <height>801</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <item>
+      <widget class="QStackedWidget" name="stackedWidget">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>800</width>
+         <height>618</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>ArrowCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: &quot;#343434&quot;</string>
+       </property>
+       <property name="currentIndex">
+        <number>1</number>
+       </property>
+       <widget class="QWidget" name="filePage">
+        <widget class="ZoomButton" name="nextButton">
+         <property name="geometry">
+          <rect>
+           <x>940</x>
+           <y>700</y>
+           <width>51</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="mouseTracking">
+          <bool>false</bool>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+background: transparent;
+font-size: 16px;
+
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="images.qrc">
+           <normaloff>:/images/Images/arrow-right.png</normaloff>:/images/Images/arrow-right.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="Line" name="line">
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>190</y>
+           <width>691</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: &quot;white&quot;;</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_22">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>450</x>
+           <y>20</y>
+           <width>113</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: transparent;
+border: none;
+color: white;
+font-size: 20px;</string>
+         </property>
+         <property name="text">
+          <string>Meteo data</string>
+         </property>
+         <property name="frame">
+          <bool>true</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="downloadDefault">
+         <property name="geometry">
+          <rect>
+           <x>790</x>
+           <y>80</y>
+           <width>71</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid &quot;#CECECE&quot;;
+color: &quot;#888&quot;</string>
+         </property>
+         <property name="text">
+          <string>Open</string>
+         </property>
+        </widget>
+        <widget class="QWidget" name="verticalLayoutWidget_6">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>80</y>
+           <width>221</width>
+           <height>61</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_9">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_9">
+            <item>
+             <widget class="QRadioButton" name="useDefault">
+              <property name="styleSheet">
+               <string notr="true">QRadioButton{
+	color:white;
+}
+QRadioButton::indicator {
+    width: 9px;
+    height: 9px;
+    border-radius: 6px;
+	margin-right:4px;
+}
+
+QRadioButton::indicator:checked {
+    background-color:  &quot;#3372d6&quot;;
+    border:  2px solid &quot;#EEE&quot;;
+}
+
+QRadioButton::indicator:unchecked {
+    background-color:  &quot;#666&quot;;
+    border:  2px solid &quot;#666&quot;;
+}</string>
+              </property>
+              <property name="text">
+               <string>Use default</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <property name="spacing">
+             <number>-1</number>
+            </property>
+            <item>
+             <widget class="QRadioButton" name="useCustom">
+              <property name="styleSheet">
+               <string notr="true">QRadioButton{
+	color:white;
+}
+QRadioButton::indicator {
+    width: 9px;
+    height: 9px;
+    border-radius: 6px;
+	margin-right:4px;
+}
+
+QRadioButton::indicator:checked {
+    background-color:  &quot;#3372d6&quot;;
+    border:  2px solid &quot;#EEE&quot;;
+}
+
+QRadioButton::indicator:unchecked {
+    background-color:  &quot;#666&quot;;
+    border:  2px solid &quot;#666&quot;;
+}</string>
+              </property>
+              <property name="text">
+               <string>Use custom file</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="importButton">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border: 1px solid &quot;#898989&quot;;
+background: &quot;#787878&quot;;
+color:white;</string>
+              </property>
+              <property name="text">
+               <string>Import</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_2">
+         <property name="geometry">
+          <rect>
+           <x>460</x>
+           <y>430</y>
+           <width>111</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: transparent;
+border: none;
+color: white;
+font-size: 20px;</string>
+         </property>
+         <property name="text">
+          <string>Settings</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QWidget" name="horizontalLayoutWidget_3">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>460</y>
+           <width>231</width>
+           <height>80</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_10">
+          <item>
+           <widget class="QLineEdit" name="lineEdit_3">
+            <property name="maximumSize">
+             <size>
+              <width>115</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background: transparent;
+border: none;
+color:white;
+</string>
+            </property>
+            <property name="text">
+             <string>Number of layers:</string>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="nb_layers">
+            <property name="styleSheet">
+             <string notr="true">QSpinBox{
+border: 1px solid #CECECE;
+color:white;
+}
+
+QSpinBox::up-button{
+	image: url(:/images/Images/plus.png);
+	height: 9px;
+	width:9px;
+	background-color: #888;
+	subcontrol-position: top right;
+	padding-left:2px;
+	padding-right:2px;
+}
+
+QSpinBox::down-button{
+	image: url(:/images/Images/minus.png);
+	height: 9px;
+	width:9px;
+	background-color: #888;
+	subcontrol-position: bottom right;
+	padding-left:2px;
+	padding-right:2px;
+}
+</string>
+            </property>
+            <property name="wrapping">
+             <bool>false</bool>
+            </property>
+            <property name="frame">
+             <bool>true</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="buttonSymbols">
+             <enum>QAbstractSpinBox::PlusMinus</enum>
+            </property>
+            <property name="minimum">
+             <number>1</number>
+            </property>
+            <property name="maximum">
+             <number>5</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="validLayer">
+            <property name="maximumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background: transparent;
+border: none;
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="images.qrc">
+              <normaloff>:/images/Images/checked.png</normaloff>:/images/Images/checked.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>25</width>
+              <height>25</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="verticalLayoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>540</y>
+           <width>621</width>
+           <height>201</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="layersSettings"/>
+        </widget>
+        <widget class="QLineEdit" name="selectedFile">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>140</y>
+           <width>221</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: none;
+background: transparent;
+color:white;</string>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QWidget" name="verticalLayoutWidget_7">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>290</y>
+           <width>221</width>
+           <height>61</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_10">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_11">
+            <item>
+             <widget class="QRadioButton" name="useDefault_ray">
+              <property name="styleSheet">
+               <string notr="true">QRadioButton{
+	color:white;
+}
+QRadioButton::indicator {
+    width: 9px;
+    height: 9px;
+    border-radius: 6px;
+	margin-right:4px;
+}
+
+QRadioButton::indicator:checked {
+    background-color:  &quot;#3372d6&quot;;
+    border:  2px solid &quot;#EEE&quot;;
+}
+
+QRadioButton::indicator:unchecked {
+    background-color:  &quot;#666&quot;;
+    border:  2px solid &quot;#666&quot;;
+}</string>
+              </property>
+              <property name="text">
+               <string>Use default</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_8">
+            <property name="spacing">
+             <number>-1</number>
+            </property>
+            <item>
+             <widget class="QRadioButton" name="useCustom_ray">
+              <property name="styleSheet">
+               <string notr="true">QRadioButton{
+	color:white;
+}
+QRadioButton::indicator {
+    width: 9px;
+    height: 9px;
+    border-radius: 6px;
+	margin-right:4px;
+}
+
+QRadioButton::indicator:checked {
+    background-color:  &quot;#3372d6&quot;;
+    border:  2px solid &quot;#EEE&quot;;
+}
+
+QRadioButton::indicator:unchecked {
+    background-color:  &quot;#666&quot;;
+    border:  2px solid &quot;#666&quot;;
+}</string>
+              </property>
+              <property name="text">
+               <string>Use custom file</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="importButton_ray">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border: 1px solid &quot;#898989&quot;;
+background: &quot;#787878&quot;;
+color:white;</string>
+              </property>
+              <property name="text">
+               <string>Import</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QPushButton" name="downloadDefault_ray">
+         <property name="geometry">
+          <rect>
+           <x>790</x>
+           <y>290</y>
+           <width>71</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid &quot;#CECECE&quot;;
+color: &quot;#888&quot;</string>
+         </property>
+         <property name="text">
+          <string>Open</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_23">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>430</x>
+           <y>210</y>
+           <width>171</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: transparent;
+border: none;
+color: white;
+font-size: 20px;</string>
+         </property>
+         <property name="text">
+          <string>Radiation data</string>
+         </property>
+         <property name="frame">
+          <bool>true</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="Line" name="line_2">
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>390</y>
+           <width>691</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: &quot;white&quot;;</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="selectedFile_ray">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>350</y>
+           <width>221</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: none;
+background: transparent;
+color:white;</string>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="constPage">
+        <widget class="ColorButtonGreen" name="run">
+         <property name="geometry">
+          <rect>
+           <x>460</x>
+           <y>700</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid &quot;#33d64b&quot;;
+color: &quot;#33d64b&quot;;
+
+
+</string>
+         </property>
+         <property name="text">
+          <string>Run</string>
+         </property>
+        </widget>
+        <widget class="ZoomButton" name="returnButton">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>700</y>
+           <width>51</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: transparent;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="images.qrc">
+           <normaloff>:/images/Images/arrow.png</normaloff>:/images/Images/arrow.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+        <widget class="QTabWidget" name="tabConst">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>-1</y>
+           <width>1031</width>
+           <height>701</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTabWidget{
+	border: none;
+}
+QTabWidget::pane { 
+border: 0px;
+}
+
+QTabBar::tab{
+	width:200px;
+	border-radius: 0;
+	border: 1px solid gray;
+	height: 30px;
+	color: white;
+}
+
+QTabBar::tab:selected{
+	background: gray;
+}</string>
+         </property>
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="runningPage">
+        <widget class="QTextBrowser" name="timeText">
+         <property name="geometry">
+          <rect>
+           <x>320</x>
+           <y>480</y>
+           <width>151</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: transparent;
+border:none;
+color:white;</string>
+         </property>
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Time [min]: &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="ColorButtonRed" name="stopButton">
+         <property name="geometry">
+          <rect>
+           <x>460</x>
+           <y>700</y>
+           <width>110</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid &quot;#d63338&quot;;
+color: &quot;#d63338&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>Stop</string>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+         <property name="default">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QProgressBar" name="progressBar">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>320</x>
+           <y>450</y>
+           <width>390</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QProgressBar{
+	border: 1px solid &quot;#787878&quot;;
+	text-align: center;
+	background-color: transparent;
+	color:white;
+}
+QProgressBar::chunk{
+	background-color: &quot;#33d64b&quot;;
+}</string>
+         </property>
+         <property name="value">
+          <number>0</number>
+         </property>
+         <property name="textVisible">
+          <bool>true</bool>
+         </property>
+         <property name="invertedAppearance">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="ZoomButton" name="goResult">
+         <property name="geometry">
+          <rect>
+           <x>940</x>
+           <y>700</y>
+           <width>51</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+background: transparent;
+font-size: 16px;
+
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="images.qrc">
+           <normaloff>:/images/Images/arrow-right.png</normaloff>:/images/Images/arrow-right.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="ZoomButton" name="returnButton_stop">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>700</y>
+           <width>51</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: transparent;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="images.qrc">
+           <normaloff>:/images/Images/arrow.png</normaloff>:/images/Images/arrow.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="resultPage">
+        <widget class="QTabWidget" name="resulTabWidget">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>1031</width>
+           <height>801</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTabWidget{
+	border: none;
+}
+QTabWidget::pane {
+ border: 0px;
+}
+
+QTabBar::tab{
+	width:100px;
+	border-radius: 0;
+	border: 1px solid gray;
+	height: 30px;
+	color: white;
+}
+
+QTabBar::tab:selected{
+	background: gray;
+}</string>
+         </property>
+         <property name="tabPosition">
+          <enum>QTabWidget::North</enum>
+         </property>
+         <property name="tabShape">
+          <enum>QTabWidget::Rounded</enum>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <property name="elideMode">
+          <enum>Qt::ElideRight</enum>
+         </property>
+         <property name="usesScrollButtons">
+          <bool>true</bool>
+         </property>
+         <property name="documentMode">
+          <bool>false</bool>
+         </property>
+         <property name="tabsClosable">
+          <bool>false</bool>
+         </property>
+         <property name="movable">
+          <bool>false</bool>
+         </property>
+         <property name="tabBarAutoHide">
+          <bool>false</bool>
+         </property>
+         <widget class="QWidget" name="all">
+          <attribute name="title">
+           <string>Table</string>
+          </attribute>
+          <widget class="QPushButton" name="newButton">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>30</y>
+             <width>105</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border: 1px solid &quot;#CECECE&quot;;
+color: &quot;#888&quot;</string>
+           </property>
+           <property name="text">
+            <string>New simulation</string>
+           </property>
+          </widget>
+          <widget class="QWidget" name="verticalLayoutWidget_2">
+           <property name="geometry">
+            <rect>
+             <x>400</x>
+             <y>170</y>
+             <width>206</width>
+             <height>201</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <item>
+               <widget class="QLineEdit" name="lineEdit_4">
+                <property name="styleSheet">
+                 <string notr="true">background: transparent;
+border: none;
+font-size:14px;
+color:white;</string>
+                </property>
+                <property name="text">
+                 <string>Temperature</string>
+                </property>
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="download_T">
+                <property name="minimumSize">
+                 <size>
+                  <width>70</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">border: 1px solid  &quot;#33d64b&quot;;
+color:  &quot;#8dc996&quot;</string>
+                </property>
+                <property name="text">
+                 <string>Open</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <item>
+               <widget class="QLineEdit" name="lineEdit_6">
+                <property name="styleSheet">
+                 <string notr="true">background: transparent;
+border: none;
+font-size:14px;
+color:white;</string>
+                </property>
+                <property name="text">
+                 <string>RH</string>
+                </property>
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="download_RH">
+                <property name="minimumSize">
+                 <size>
+                  <width>70</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">border: 1px solid  &quot;#33d64b&quot;;
+color:  &quot;#8dc996&quot;</string>
+                </property>
+                <property name="text">
+                 <string>Open</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_3">
+              <item>
+               <widget class="QLineEdit" name="lineEdit_5">
+                <property name="styleSheet">
+                 <string notr="true">background: transparent;
+border: none;
+font-size:14px;
+color:white;</string>
+                </property>
+                <property name="text">
+                 <string>pv</string>
+                </property>
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="download_pv">
+                <property name="minimumSize">
+                 <size>
+                  <width>70</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">border: 1px solid  &quot;#33d64b&quot;;
+color:  &quot;#8dc996&quot;</string>
+                </property>
+                <property name="text">
+                 <string>Open</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit">
+           <property name="geometry">
+            <rect>
+             <x>440</x>
+             <y>120</y>
+             <width>141</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>-1</pointsize>
+             <underline>true</underline>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: transparent;
+border: none;
+font-size: 18px;
+color:white;</string>
+           </property>
+           <property name="text">
+            <string>Export matrices</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ZoomButton</class>
+   <extends>QPushButton</extends>
+   <header>customWidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ColorButtonGreen</class>
+   <extends>QPushButton</extends>
+   <header>customWidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ColorButtonRed</class>
+   <extends>QPushButton</extends>
+   <header location="global">customWidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="images.qrc"/>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

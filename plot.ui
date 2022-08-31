@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1034</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="plot" native="true">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>150</y>
+     <width>801</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: &quot;#343434&quot;
+</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="savePlot">
+   <property name="geometry">
+    <rect>
+     <x>950</x>
+     <y>50</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 1px solid &quot;#33d64b&quot;;
+color: &quot;#33d64b&quot;;
+border-radius:20px;
+</string>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>40</y>
+     <width>251</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLineEdit" name="lineEdit_3">
+      <property name="styleSheet">
+       <string notr="true">background: transparent;
+border: none;
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>Date range:</string>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSpinBox" name="date_min">
+      <property name="minimumSize">
+       <size>
+        <width>70</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QSpinBox{
+border: 1px solid #CECECE;
+color:white;
+}
+
+QSpinBox::up-button{
+	image: url(:/images/Images/plus.png);
+	height: 9px;
+	width:9px;
+	background-color: #888;
+	subcontrol-position: top right;
+	padding-left:2px;
+	padding-right:2px;
+}
+
+QSpinBox::down-button{
+	image: url(:/images/Images/minus.png);
+	height: 9px;
+	width:9px;
+	background-color: #888;
+	subcontrol-position: bottom right;
+	padding-left:2px;
+	padding-right:2px;
+}
+</string>
+      </property>
+      <property name="maximum">
+       <number>1000</number>
+      </property>
+      <property name="displayIntegerBase">
+       <number>10</number>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSpinBox" name="date_max">
+      <property name="minimumSize">
+       <size>
+        <width>70</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QSpinBox{
+border: 1px solid #CECECE;
+color:white;
+}
+
+QSpinBox::up-button{
+	image: url(:/images/Images/plus.png);
+	height: 9px;
+	width:9px;
+	background-color: #888;
+	subcontrol-position: top right;
+	padding-left:2px;
+	padding-right:2px;
+}
+
+QSpinBox::down-button{
+	image: url(:/images/Images/minus.png);
+	height: 9px;
+	width:9px;
+	background-color: #888;
+	subcontrol-position: bottom right;
+	padding-left:2px;
+	padding-right:2px;
+}
+</string>
+      </property>
+      <property name="maximum">
+       <number>1000</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>40</y>
+     <width>131</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QLineEdit" name="lineEdit_4">
+      <property name="styleSheet">
+       <string notr="true">background: transparent;
+border: none;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>Space:</string>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QDoubleSpinBox" name="space">
+      <property name="minimumSize">
+       <size>
+        <width>70</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QDoubleSpinBox{
+border: 1px solid #CECECE;
+color:white;
+}
+
+QDoubleSpinBox::up-button{
+	image: url(:/images/Images/plus.png);
+	height: 9px;
+	width:9px;
+	background-color: #888;
+	subcontrol-position: top right;
+	padding-left:2px;
+	padding-right:2px;
+}
+
+QDoubleSpinBox::down-button{
+	image: url(:/images/Images/minus.png);
+	height: 9px;
+	width:9px;
+	background-color: #888;
+	subcontrol-position: bottom right;
+	padding-left:2px;
+	padding-right:2px;
+}
+</string>
+      </property>
+      <property name="decimals">
+       <number>2</number>
+      </property>
+      <property name="singleStep">
+       <double>0.050000000000000</double>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

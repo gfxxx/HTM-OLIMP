@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="images">
+    <file>Images/information.png</file>
+    <file>Images/arrow-right.png</file>
+    <file>Images/info.png</file>
+    <file>Images/arrow.png</file>
+    <file>Images/checked.png</file>
+    <file>Images/minus.png</file>
+    <file>Images/plus.png</file>
+  </qresource>
+</RCC>
