@@ -108,7 +108,7 @@ class Window(QMainWindow):
         """
         # If use default is checked, load data_air file
         if self.ui.useDefault.isChecked():
-            df = pd.read_excel(resource_path('HT/data_air.xlsx'))
+            df = pd.read_excel(resource_path('data/data_air.xlsx'))
             self.climate_data = df.values
         # Else check if a file is loaded correctly
         else:

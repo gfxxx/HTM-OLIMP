@@ -3,9 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-HTM-OLIMP's documentation
+HTM-OLIMP
 =====================================
 
 .. toctree::
-   index.md
+   :maxdepth: 2
+
+   download.md
 
